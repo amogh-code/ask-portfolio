@@ -28,6 +28,7 @@
   <a class="nav-logo" href="#" onclick="showPage('home'); return false;">A<em>S</em>K</a>
   <div class="nav-links">
     <a href="#" id="nl-home"     class="active"  onclick="showPage('home');     return false;">Home</a>
+    <a href="#" id="nl-blog"                 onclick="showPage('blog');      return false;">Blog</a>
     <a href="#" id="nl-projects"             onclick="showPage('projects');  return false;">Projects</a>
     <a href="#" id="nl-ventures"             onclick="showPage('ventures');  return false;">Ventures</a>
     <a href="#" id="nl-about"                onclick="showPage('about');     return false;">About</a>
@@ -52,6 +53,7 @@
 <!-- Mobile nav -->
 <div class="mobile-nav" id="mobile-nav">
   <a href="#" onclick="showPage('home');     closeMenu(); return false;" id="mn-home">Home</a>
+  <a href="#" onclick="showPage('blog');     closeMenu(); return false;" id="mn-blog">Blog</a>
   <a href="#" onclick="showPage('projects'); closeMenu(); return false;" id="mn-projects">Projects</a>
   <a href="#" onclick="showPage('ventures'); closeMenu(); return false;" id="mn-ventures">Ventures</a>
   <a href="#" onclick="showPage('about');    closeMenu(); return false;" id="mn-about">About</a>
@@ -206,6 +208,31 @@
     <div class="quotes-track" id="quotes-track"></div>
   </div>
 
+  <!-- Twitter / X Feed -->
+  <div class="container">
+    <section class="tweets-section reveal">
+      <div class="tweets-header">
+        <div class="tweets-header-left">
+          <div class="section-eyebrow">On My Mind</div>
+          <h2>What I'm <em>Thinking</em></h2>
+        </div>
+        <a href="https://x.com/AmoghKris" target="_blank" class="tweets-follow-btn">
+          Follow @AmoghKris ↗
+        </a>
+      </div>
+      <div class="tweets-embed-wrap">
+        <a class="twitter-timeline"
+           data-theme="dark"
+           data-chrome="nofooter noborders transparent"
+           data-tweet-limit="5"
+           data-dnt="true"
+           href="https://twitter.com/AmoghKris">
+          Tweets by AmoghKris
+        </a>
+      </div>
+    </section>
+  </div>
+
   <!-- Footer -->
   <footer>
     <div class="footer-top">
@@ -217,6 +244,7 @@
         <h5>Navigation</h5>
         <ul>
           <li><a href="#" onclick="showPage('home');     return false;">Home</a></li>
+          <li><a href="#" onclick="showPage('blog');     return false;">Blog</a></li>
           <li><a href="#" onclick="showPage('projects'); return false;">Projects</a></li>
           <li><a href="#" onclick="showPage('ventures'); return false;">Ventures</a></li>
           <li><a href="#" onclick="showPage('about');    return false;">About</a></li>
@@ -226,6 +254,8 @@
       <div class="footer-col">
         <h5>Connect</h5>
         <div class="footer-socials">
+          <a href="https://x.com/AmoghKris" target="_blank">Twitter / X ↗</a>
+          <a href="https://amoghkris.substack.com/" target="_blank">Substack ↗</a>
           <a href="https://github.com/amogh-code" target="_blank">GitHub ↗</a>
           <a href="https://www.linkedin.com/in/amogh-sai-krishnan-1506a8212" target="_blank">LinkedIn ↗</a>
           <a href="https://www.instagram.com/amogh.kris/" target="_blank">Instagram ↗</a>
@@ -515,6 +545,33 @@
       </div>
     </div>
 
+    <!-- Hypericon Skin -->
+    <div class="accordion" id="vc-hypericon">
+      <button class="accordion-trigger" onclick="toggleAcc('vc-hypericon')">
+        <div class="acc-head">
+          <div class="acc-name">Hypericon Skin</div>
+          <div class="acc-tagline">Skincare Pinterest affiliate marketing · Ongoing</div>
+        </div>
+        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <div class="venture-layout">
+            <div class="venture-body">
+              <div class="hypericon-badge">Pinterest · Affiliate</div>
+              <p>A skincare-focused Pinterest affiliate marketing project, curating and promoting skincare content and products through a dedicated Pinterest presence.</p>
+              <div class="venture-btns">
+                <a class="btn-ghost" href="https://in.pinterest.com/hypericonskin/" target="_blank">View on Pinterest ↗</a>
+              </div>
+            </div>
+            <div class="venture-media">
+              <div class="media-block">🌿</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- /ventures-section -->
   <div style="height:2rem;"></div>
 </div>
@@ -758,7 +815,76 @@
 </section>
 
 <!-- ════════════════════════════════════════
-     CONTACT PAGE
+     BLOG PAGE
+════════════════════════════════════════ -->
+<section id="page-blog" class="page">
+<div class="container">
+  <div class="page-header">
+    <div class="section-number">06</div>
+    <div class="section-eyebrow">Writing</div>
+    <h1 class="section-title">Thoughts &amp;<em> Essays</em></h1>
+    <p class="section-sub">I write about AI, entrepreneurship, psychology, and whatever else is on my mind. Published on Substack.</p>
+  </div>
+
+  <div class="blog-layout">
+    <div>
+      <div class="substack-embed-wrap">
+        <iframe src="https://amoghkris.substack.com/embed"
+          width="100%" height="600"
+          style="border:none; background: transparent;"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
+      <div style="margin-top:1.5rem; text-align:center;">
+        <a href="https://amoghkris.substack.com/" target="_blank" class="btn-red">
+          Read All Posts on Substack ↗
+        </a>
+      </div>
+    </div>
+
+    <div class="blog-sidebar">
+      <!-- Subscribe card -->
+      <div class="blog-sidebar-card reveal">
+        <h4>Subscribe to the Newsletter</h4>
+        <p>Get my essays delivered straight to your inbox. No spam, just thinking.</p>
+        <a href="https://amoghkris.substack.com/subscribe" target="_blank" class="btn-subscribe" style="display:block;text-align:center;padding:0.85rem;text-decoration:none;">
+          Subscribe Free ↗
+        </a>
+        <a href="https://amoghkris.substack.com/" target="_blank" class="substack-direct-link">
+          or read on Substack ↗
+        </a>
+      </div>
+
+      <!-- Topics card -->
+      <div class="blog-sidebar-card reveal reveal-delay-1">
+        <h4>What I Write About</h4>
+        <div class="tag-row" style="margin:1rem 0 0;">
+          <span class="tag">AI & Automation</span>
+          <span class="tag">Entrepreneurship</span>
+          <span class="tag">Psychology</span>
+          <span class="tag">Building in Public</span>
+          <span class="tag">Bangalore</span>
+          <span class="tag">Startups</span>
+        </div>
+      </div>
+
+      <!-- Follow on X card -->
+      <div class="blog-sidebar-card reveal reveal-delay-2">
+        <h4>Shorter Takes on X</h4>
+        <p>For shorter thoughts, observations, and real-time updates — follow me on Twitter / X.</p>
+        <a href="https://x.com/AmoghKris" target="_blank" class="btn-ghost" style="display:block;text-align:center;">
+          @AmoghKris ↗
+        </a>
+      </div>
+    </div>
+  </div>
+  <div style="height:4rem;"></div>
+</div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CONTACT PAGE  (updated)
 ════════════════════════════════════════ -->
 <section id="page-contact" class="page">
 <div class="container">
@@ -851,6 +977,40 @@
     </div>
   </div>
   <div style="height:3rem;"></div>
+
+  <!-- Book a Call -->
+  <div class="calendly-section reveal">
+    <div class="calendly-section-header">
+      <div>
+        <h3>Book a 30-min Call</h3>
+        <p>Want to talk about a project, collaboration, or just have a conversation? Pick a time that works.</p>
+      </div>
+      <a href="https://calendly.com/amoghsaikrishnan/30min" target="_blank" class="btn-red">
+        Open in Calendly ↗
+      </a>
+    </div>
+    <div class="calendly-embed">
+      <div class="calendly-inline-widget"
+        data-url="https://calendly.com/amoghsaikrishnan/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=111111&text_color=f5f0e8&primary_color=d9291c">
+      </div>
+    </div>
+  </div>
+
+  <!-- Digital Card -->
+  <div class="digital-card-section reveal">
+    <div class="digital-card-left">
+      <div class="digital-card-icon">🪪</div>
+      <div class="digital-card-text">
+        <h4>My Digital Business Card</h4>
+        <p>Quick access to all my links in one place — share it with anyone.</p>
+      </div>
+    </div>
+    <a href="https://amogh-kris.carrd.co/" target="_blank" class="btn-ghost">
+      View Digital Card ↗
+    </a>
+  </div>
+
+  <div style="height:4rem;"></div>
 </div>
 </section>
 
@@ -895,7 +1055,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ─ Navigation
-const pages = ['home','projects','ventures','about','contact'];
+const pages = ['home','blog','projects','ventures','about','contact'];
 function showPage(id) {
   pages.forEach(p => {
     document.getElementById('page-'+p)?.classList.remove('active');
@@ -1053,6 +1213,12 @@ function initReveal() {
 }
 initReveal();
 </script>
+
+<!-- Twitter Widget -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Calendly Widget -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
 </body>
 </html>
